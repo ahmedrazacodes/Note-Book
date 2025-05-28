@@ -1,0 +1,340 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #edd382;
+    font-family:cursive;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+
+.addbar{
+    gap: 1%;
+    margin-top: 1%;
+}
+
+
+.search{
+    width: 50%;
+    height: 7vh;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    padding: 0px 10px;
+    font-size: 1.5em;
+    font-family:cursive;
+}
+
+.btn{
+    background-color: #eef085;
+    width: 9%;
+    height: 7vh;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 1em; 
+    font-family:cursive;
+}
+
+
+
+.note-cards-maindiv{
+    width: 72%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-top: 10px;
+    margin-left: 14%;
+    text-align: center;
+
+}
+
+
+.note-card{
+    background-color: #f6f881;
+    width: 32%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family:cursive;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.delete-note{
+    color: rgb(114, 111, 111);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;  
+}
+
+.delete-note:hover{
+    color: black;
+}
+
+.card-heading{
+    padding-right: 30px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.card-Catogary{
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.card-note{
+    margin-top: 10px;
+    text-align: left; 
+    text-align: justify;
+    font-family:cursive;
+    padding: 10px;
+}
+
+
+.form-main-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
+
+}
+
+.card-form{
+    display: none;
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    background-color: #fbfd91;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 9%  h;
+}
+
+
+.card-form-label{
+    font-size: 1.5em;
+    float: left;
+}
+
+
+.card-form-input{
+    width: 93%;
+    height: 3vh;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    font-family: cursive;
+}
+
+.note-text{
+    height: 30vh;
+    font-size: 1em;
+    font-family: cursive ;
+    margin-top: 10px;
+}
+
+.create-note{
+    width: 32%;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #eef085;
+    font-weight: bolder;
+    font-size: 0.7em;
+    font-family:cursive;
+    float: left;
+}
+
+
+
+.close-form{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-family: cursive;
+    float: right;
+    position: relative;
+}
+
+
+
+/* media quary */
+
+@media(max-width: 768px){
+    .search{
+    width: 40%;
+    height: 5vh;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.btn{
+    background-color: #eef085;
+    width: 10%;
+    height: 5vh;
+    font-size: 0.8em; 
+    transition: 0.5s;
+}
+    .main-heading{
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+    .subtitle{
+        font-size: 0.8em;
+        transition: 0.5s;
+    }
+
+    /* form */
+    .card-form{
+    width: 40%;
+    height: auto;
+}
+
+    .card-form-label{
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+    .card-form-input{
+    width: 93%;
+    height: 2vh;
+    font-size: 0.8em;
+    transition: 0.5s;
+}
+    .note-text{
+    height: 20vh;
+    font-size: 0.8em;
+    font-family: cursive ;
+    transition: 0.5s;
+}
+    .create-note{
+    width: 40%;
+    height: 5vh;
+    font-size: 0.6em;
+    transition: 0.5s;
+
+}
+
+    .close-form{
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+    /* card */
+
+    .note-cards-maindiv{
+    width: 72%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-top: 10px;
+    margin-left: 18%;
+    text-align: center;
+
+}
+
+
+    .note-card{
+    width: 29%;
+    transition: 0.5s;
+}
+
+.card-heading{
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.card-Catogary{
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.card-note{
+    font-size: 0.8em;
+    transition: 0.5s;
+}
+
+    
+}
+
+
+    
+@media(max-width: 576px){
+
+    /* form */
+    .card-form{
+    width: 60%;
+    padding-right: 25px;
+}
+
+    .card-form-label{
+    font-size: 1em;
+    transition: 0.5s;
+}
+    .card-form-input{
+    width: 93%;
+    height: 1vh;
+    font-size: 0.6em;
+    transition: 0.5s;
+}
+    .note-text{
+    height: 15vh;
+    font-size: 0.8em;
+    font-family: cursive ;
+    transition: 0.5s;
+}
+    .create-note{
+    width: 30%;
+    height: 3vh;
+    margin-top: 5px;
+
+}
+
+
+    /* card */
+
+    .note-cards-maindiv{
+    gap: 2%;
+}
+
+
+.card-heading{
+    font-size: 0.8em;
+}
+
+.card-Catogary{
+    font-size: 0.6em;
+}
+
+.card-note{
+    font-size: 0.5em;
+}
+}

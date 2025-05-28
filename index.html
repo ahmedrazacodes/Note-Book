@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/686/686234.png">
+  </head>
+  <body>
+    
+    
+    <div class="container">
+      <br>
+      <h1 class="main-heading">Note Book</h1>
+      <p class="subtitle">Here you can stores yours Notes</p>
+      <div class="addbar">
+        <input type="text" placeholder="Search......!" class="search"/>
+        <select name="" class="btn cat addbar-catogary">
+          <option value="" class="catogary-option" disabled selected>Catogary</option>
+        </select>
+        <button class="btn Add" onclick="Add()">Add</button>
+        
+      </div>
+    </div>
+    
+
+
+      <div class="note-cards-maindiv">
+
+        
+      </div>
+
+      <div class="form-main-div">
+    <div class="card-form">
+      <button class="close-form" onclick="closeform()">X</button>
+      <label for="" class="card-form-label">Title</label><br />
+      <input type="text" placeholder="Title" class="card-form-input title" />
+      <br />
+ 
+
+      <label for="" class="card-form-label">Catogary</label><br />
+      <input
+        type="text"
+        placeholder="Catogary"
+        class="card-form-input catogary"
+      />
+      <br />
+      <textarea name="" id="" placeholder="Write here........"
+        class="card-form-input note-text"></textarea>
+
+      <button class="create-note" onclick="createcard()">Create Note</button>
+    </div>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
